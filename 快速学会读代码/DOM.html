@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hi</title>
+    <style type="text/css">
+      /* CSS */
+
+      /*
+      .btn{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+
+        width: 60px;
+        height: 30px;
+
+        color: #ffffff;
+        font-size: 14px;
+
+        background-color: #ff0000;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <h1>基础</h1>
+    <div>
+      <a href="http://huiter.me/" target="_blank">
+        <img src="http://huiter.me/avatar.jpg" alt="huiter" title="huiter" width="60">
+      </a>
+      <input type="text" name="" value="100">
+      <div>
+        <p>这个页面演示了基本的 <span style="color:red">HTML</span> 使用</p>
+      </div>
+      <button id="btn" class="btn" onclick="alert('Hi')" style="color: #ffffff;background: #ff0000;">按钮</button>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      /* JavaScript */
+
+      function start() {
+        var btn = document.getElementById('btn');
+        btn.innerHTML = "按钮"
+      }
+      onload = start;
+
+      /* jQuery */
+      $(document).ready(function(){
+        $("#btn").html("按钮")
+      })
+
+    </script>
+  </body>
+</html>

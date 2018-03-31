@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .declaration-order {
+      /* Positioning */
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+
+      /* Box-model */
+      box-sizing: content-box;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px 10px 10px 10px;
+      width: 100px;
+      height: 100px;
+
+      /* Typography */
+      font: normal 13px "Helvetica Neue", sans-serif;
+      font-weight: 600;
+      line-height: 13px;
+      color: #333;
+      text-align: left;
+
+      /* Visual */
+      background-color: #40a9ff;
+      border: 2px solid black;
+      border-radius: 0px;
+
+      /* Misc */
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div style="position: static; margin: 100px; padding:50px; border: 2px solid #ccc">
+    <div class="declaration-order">
+      <div style="background:white;height: 100%">方块</div>
+    </div>
+    <div class="declaration-order">
+      <div style="background:white;height: 100%">方块</div>
+    </div>
+    <div class="declaration-order" style="position: ;top:0px;">
+      <div style="background:white;height: 100%">方块</div>
+    </div>
+    <div class="declaration-order">
+      <div style="background:white;height: 100%">方块</div>
+    </div>
+  </div>
+</body>
+</html>
