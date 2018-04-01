@@ -2,6 +2,7 @@
 <html>
 <head>
   <title></title>
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <style type="text/css">
     *{
       margin: 0px;
@@ -9,11 +10,7 @@
     }
     .declaration-order {
       /* Positioning */
-      position: relative;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      position: static;
       z-index: 100;
 
       /* Box-model */
@@ -49,7 +46,7 @@
     <div class="declaration-order">
       <div style="background:white;height: 100%">方块</div>
     </div>
-    <div class="declaration-order" style="position: ;top:0px;">
+    <div class="declaration-order" style="position:relative; left:0px;">
       <div style="background:white;height: 100%">方块</div>
     </div>
     <div class="declaration-order">
